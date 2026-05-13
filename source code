@@ -1,0 +1,24 @@
+
+# Import random to receive a random response
+import random
+
+# Create a list of possible responses from 8 ball
+answers = [
+    "Yes",
+    "No",
+    "Absolutely",
+    "My sources are unsure at this time",
+    "Try your question again later",
+    "Not at this time"
+]
+
+# Asks user for their question
+question = input("What would you like to know? ")
+
+# Chooses a random answer from answers list
+answer = random.choice(answers)
+
+# Display response
+print("The ball responds:", answer)
+
+input("Press Enter to close...")
